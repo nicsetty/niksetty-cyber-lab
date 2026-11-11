@@ -20,3 +20,25 @@
 .hero-visual img{display:block;width:100%;max-width:580px;height:auto;object-fit:contain;filter:drop-shadow(0 24px 30px rgba(217,112,154,.12))}
 @media(max-width:850px){.hero-visual{width:100%;min-height:0;max-width:580px;margin:0 auto 12px;transform:none}}
 @media(max-width:580px){.hero-visual{width:100%;min-height:0;height:auto;max-width:100%;margin:8px auto 18px;transform:none}.hero-visual img{width:100%}}
+
+.link-arrow {
+  display: inline-block;
+  position: relative;
+  width: .6em;
+  height: .6em;
+  margin-inline-start: .12em;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  vertical-align: .17em;
+}
+.link-arrow::after {
+  content: "";
+  position: absolute;
+  top: -.02em;
+  right: -.01em;
+  width: .79em;
+  height: 1px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  transform-origin: right center;
+}
