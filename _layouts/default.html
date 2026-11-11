@@ -17,19 +17,10 @@
     {% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title }}
   </title>
 
-  <!-- Animated Chrome Star Favicon -->
-  <link
-    rel="icon"
-    type="image/gif"
-    href="{{ '/assets/favicon.gif' | relative_url }}"
-  >
-
-  <!-- Static Favicon Fallback -->
-  <link
-    rel="alternate icon"
-    type="image/png"
-    href="{{ '/assets/favicon.png' | relative_url }}"
-  >
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon.png' | relative_url }}">
+  <link rel="icon" type="image/gif" sizes="32x32" href="{{ '/assets/favicon.gif' | relative_url }}">
 
   <!-- Website Stylesheet -->
   <link
