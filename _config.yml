@@ -1,5 +1,5 @@
 title: "niksetty.exe"
-description: "A personal cybersecurity journal by Nimshasri."
+description: "Cybersecurity writeups and learning portfolio by Nimshasri."
 url: "https://nicsetty.github.io"
 baseurl: "/niksetty-cyber-lab"
 markdown: kramdown
@@ -11,22 +11,19 @@ collections:
   notes:
     output: true
     permalink: /notes/:name/
+  achievements:
+    output: true
+    permalink: /achievements/:name/
+  events:
+    output: true
+    permalink: /events/:name/
 defaults:
-  - scope:
-      path: ""
-      type: writeups
-    values:
-      layout: article
-      kind: Writeup
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: article
-      kind: Note
-exclude:
-  - SETUP.md
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+  - scope: {path: "", type: writeups}
+    values: {layout: article, kind: Writeup}
+  - scope: {path: "", type: notes}
+    values: {layout: article, kind: Note}
+  - scope: {path: "", type: achievements}
+    values: {layout: article, kind: Achievement}
+  - scope: {path: "", type: events}
+    values: {layout: article, kind: Event}
+exclude: [README.md, SETUP.md, Gemfile, Gemfile.lock, vendor]
