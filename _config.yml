@@ -1,0 +1,32 @@
+title: "niksetty.exe"
+description: "A personal cybersecurity journal by Nimshasri."
+url: "https://nicsetty.github.io"
+baseurl: "/niksetty-cyber-lab"
+markdown: kramdown
+permalink: pretty
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:name/
+  notes:
+    output: true
+    permalink: /notes/:name/
+defaults:
+  - scope:
+      path: ""
+      type: writeups
+    values:
+      layout: article
+      kind: Writeup
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: article
+      kind: Note
+exclude:
+  - SETUP.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

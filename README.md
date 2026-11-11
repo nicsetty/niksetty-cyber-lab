@@ -1,20 +1,11 @@
 # niksetty.exe — Cyber Lab
 
-A static GitHub Pages site for Niksetty's cybersecurity writeups. Built with HTML/CSS/JavaScript, no build tools or dependencies.
+My personal cybersecurity portfolio, powered by GitHub Pages + Jekyll.
 
-## Publish
-1. Create a public GitHub repository named `niksetty-cyber-lab` (or any name).
-2. Upload **all files inside this folder** to the repository root, keeping the directory structure.
-3. In **Settings → Pages**, choose **Deploy from a branch**, branch `main`, folder `/(root)` and save.
-4. Visit `https://YOUR-GITHUB-USERNAME.github.io/niksetty-cyber-lab/` (replace the username; if your repo has another name, use that instead).
+**This website deliberately ships with zero writeups and zero notes.** Only articles I write are published.
 
-## Customize
-- `index.html`: homepage copy and featured entries.
-- `assets/style.css`: colors, typography and spacing.
-- `writeups/openvpn-tryhackme.html`: first educational article.
-- `writeups.html`: listing (also update cards when adding new posts).
-- `assets/chrome-shield.png`: approved generated artwork, cropped for use on site.
+- Add a Markdown file to `_writeups/` to publish a writeup.
+- Add a Markdown file to `_notes/` to publish a note.
+- Push changes to `main`; GitHub Pages builds and updates the site automatically.
 
-## Safety
-Don't commit `.ovpn` configurations, tokens, passwords, room flags or private lab data. The OpenVPN post is an educational guide; mark projects as completed only once genuinely tested.
-# niksetty-cyber-lab
+See **SETUP.md** for installing this clean version and writing your first article.

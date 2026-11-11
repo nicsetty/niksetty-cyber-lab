@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<article class="article container"><a class="back-link" href="{% if page.collection == 'notes' %}{{ '/notes/' | relative_url }}{% else %}{{ '/writeups/' | relative_url }}{% endif %}">← Back to {{ page.kind | default: 'Articles' }}s</a><div class="article-eyebrow">[ {{ page.kind | default: 'WRITEUP' | upcase }} ] {% if page.category %} · {{ page.category | escape }}{% endif %}</div><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="article-description">{{ page.description | escape }}</p>{% endif %}<div class="article-meta">{% if page.date %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>{% endif %}{% if page.tags %}<span>{% for tag in page.tags %}#{{ tag | escape }} {% endfor %}</span>{% endif %}</div><div class="article-body">{{ content }}</div><div class="article-bottom"><a href="{{ '/' | relative_url }}">← Back home</a></div></article>
