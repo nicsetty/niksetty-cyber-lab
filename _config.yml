@@ -1,7 +1,7 @@
 title: "niksetty.exe"
 description: "Cybersecurity writeups and learning portfolio by Nimshasri."
-url: "https://nicsetty.github.io"
-baseurl: "/niksetty-cyber-lab"
+url: "https://niksetty.xyz"
+baseurl: ""
 markdown: kramdown
 permalink: pretty
 collections:
