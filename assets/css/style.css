@@ -13,3 +13,10 @@
 .highlights-grid b{display:block;margin-top:26px;color:#c34d7b;font-size:13px}
 @media(max-width:850px){.highlights{margin-top:0}}
 @media(max-width:580px){.highlights-grid{grid-template-columns:1fr}}
+
+
+/* The uploaded glass-and-chrome shield replaces the earlier CSS drawing. */
+.hero-visual{height:auto;min-height:0;display:flex;align-items:center;justify-content:center;overflow:visible;isolation:auto}
+.hero-visual img{display:block;width:100%;max-width:580px;height:auto;object-fit:contain;filter:drop-shadow(0 24px 30px rgba(217,112,154,.12))}
+@media(max-width:850px){.hero-visual{width:100%;min-height:0;max-width:580px;margin:0 auto 12px;transform:none}}
+@media(max-width:580px){.hero-visual{width:100%;min-height:0;height:auto;max-width:100%;margin:8px auto 18px;transform:none}.hero-visual img{width:100%}}
